@@ -97,13 +97,19 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="整理的图形学几何和物理仿真大类的核心论文"><a href="#整理的图形学几何和物理仿真大类的核心论文" class="headerlink" title="整理的图形学几何和物理仿真大类的核心论文"></a>整理的图形学几何和物理仿真大类的核心论文</h2><p>这份清单会不定期更新，每篇文章的属性在后面标出，文章的主要来源是TOG，sig&#x2F;siga，CMAME, JCP，IMR，中国数学会建议的应用数学T2以上期刊的发表论文。</p>
+        <h2
+id="整理的图形学几何和物理仿真大类的核心论文">整理的图形学几何和物理仿真大类的核心论文</h2>
+<p>这份清单会不定期更新，每篇文章的属性在后面标出，文章的主要来源是TOG，sig/siga，CMAME,
+JCP，IMR，中国数学会建议的应用数学T2以上期刊的发表论文。</p>
 <ul>
-<li>2024 IMR Integrable Frame Fields using Odeco Tensors (geometry).</li>
-<li>2025 tog Designing 3D Anisotropic Frame Fields with Odeco Tensors(geometry).</li>
-<li>2025 CMAME Invariant-manifold-based model reduction for geometrically exact beam dynamics(simulation).</li>
-<li>2025 Solving nonlinear eigenvalue problems via contour integration and region partitioning(numerical).</li>
-</ul>
+<li>2024 IMR Integrable Frame Fields using Odeco Tensors
+(geometry).</li>
+<li>2025 tog Designing 3D Anisotropic Frame Fields with Odeco
+Tensors(geometry).</li>
+<li>2025 CMAME Invariant-manifold-based model reduction for
+geometrically exact beam dynamics(simulation).</li>
+<li>2025 Solving nonlinear eigenvalue problems via contour integration
+and region partitioning(numerical).
         
           <p class="article-more-link">
             <a href="/2026/01/26/%E6%95%B4%E7%90%86%E7%9A%84%E6%A0%B8%E5%BF%83%E8%AE%BA%E6%96%87-%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/#more">Read More</a>
@@ -112,7 +118,65 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://liuweizhou319.github.io/2026/01/26/%E6%95%B4%E7%90%86%E7%9A%84%E6%A0%B8%E5%BF%83%E8%AE%BA%E6%96%87-%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/" data-id="cuidgG4XLqOrUunIvlTgEwGhC" data-title="整理的核心论文(不定期更新)" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://liuweizhou319.github.io/2026/01/26/%E6%95%B4%E7%90%86%E7%9A%84%E6%A0%B8%E5%BF%83%E8%AE%BA%E6%96%87-%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/" data-id="cuidU5WprtgBNrUTZry4uWdKS" data-title="整理的核心论文(不定期更新)" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-fluid-cohomology" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/01/30/fluid-cohomology/" class="article-date">
+  <time class="dt-published" datetime="2026-01-30T10:35:32.000Z" itemprop="datePublished">2026-01-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/01/30/fluid-cohomology/">fluid_cohomology</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="省流版">省流版</h2>
+<p>对于不可压缩流体的涡度形式的欧拉方程: <span
+class="math inline">$\begin{array}{l} \frac{\partial \omega}{\partial t}
++ (\mathbf{u} \cdot \nabla)\omega = (\omega \cdot \nabla)\mathbf{u}.
+\end{array}$</span></p>
+<p>重建速度的时候求解 <span
+class="math inline">∇ × <strong>u</strong> = <em>ω</em></span>
+会导致速度场 <span
+class="math inline"><strong>u</strong> = ∇ × <em>ψ</em> + <strong>h</strong></span>
+中的调和分量 <span class="math inline"><strong>h</strong></span>消失，而
+<span
+class="math inline"><strong>h</strong></span>正是描述绕着流体运动的区域的孔洞环流的量，这个量的消失会使得流体在试图穿过孔洞之间的缝隙时出错，正确的涡度重建速度公式应该是
+<span class="math inline">$\mathbf{u} = (\nabla\times)^{-1}\omega +
+\sum\limits_{i}^{}c_i\mathbf{h}_i$</span>。FluidCohomology的核心贡献是推导了这里的系数
+<span
+class="math inline"><em>c</em><sub><em>i</em></sub></span>的演变公式，并且从几何上给了这个系数一个解释。</p>
+        
+          <p class="article-more-link">
+            <a href="/2026/01/30/fluid-cohomology/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://liuweizhou319.github.io/2026/01/30/fluid-cohomology/" data-id="cuidhbeflS1CTKhD6fYUmE3DJ" data-title="fluid_cohomology" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -146,7 +210,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>目前的情况是在一个非英语母语的国家，陌生的环境开始博士生活。我答应了她要脱离幼稚变得成熟，结合我自身的实际情况，在这里回顾和整理接下来要做的事情。</p>
+        <h2 id="引言">引言</h2>
+<p>目前的情况是在一个非英语母语的国家，陌生的环境开始博士生活。我答应了她要脱离幼稚变得成熟，结合我自身的实际情况，在这里回顾和整理接下来要做的事情。
         
           <p class="article-more-link">
             <a href="/2026/01/26/%E7%94%9F%E6%B4%BB%EF%BC%8C%E7%A7%91%E7%A0%94%E5%92%8C%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B4%E7%90%86/#more">Read More</a>
@@ -155,7 +220,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://liuweizhou319.github.io/2026/01/26/%E7%94%9F%E6%B4%BB%EF%BC%8C%E7%A7%91%E7%A0%94%E5%92%8C%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B4%E7%90%86/" data-id="cuidj-CY42tCDHK2dxpxMZmY8" data-title="生活，科研和学习的整理" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://liuweizhou319.github.io/2026/01/26/%E7%94%9F%E6%B4%BB%EF%BC%8C%E7%A7%91%E7%A0%94%E5%92%8C%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B4%E7%90%86/" data-id="cuid-fQzopoQRr6ixx-oD8SAp" data-title="生活，科研和学习的整理" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -194,7 +259,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://liuweizhou319.github.io/2023/03/19/test2/" data-id="cuid38KyCJ5rX9aou3o45FI_X" data-title="test2" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://liuweizhou319.github.io/2023/03/19/test2/" data-id="cuidEr17PGzhb5KERrvfYSRSR" data-title="test2" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -228,7 +293,13 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very
+first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for
+more info. If you get any problems when using Hexo, you can find the
+answer in <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or
+you can ask me on <a
+target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
         
           <p class="article-more-link">
             <a href="/2023/03/19/hello-world/#more">Read More</a>
@@ -237,7 +308,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://liuweizhou319.github.io/2023/03/19/hello-world/" data-id="cuidpg-UfwM5-xusYWv9jzl1I" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://liuweizhou319.github.io/2023/03/19/hello-world/" data-id="cuid_GNTfIc1UisH37vFKegQ2" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -278,6 +349,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/01/30/fluid-cohomology/">fluid_cohomology</a>
+          </li>
         
           <li>
             <a href="/2026/01/26/%E6%95%B4%E7%90%86%E7%9A%84%E6%A0%B8%E5%BF%83%E8%AE%BA%E6%96%87-%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%9B%B4%E6%96%B0/">整理的核心论文(不定期更新)</a>
